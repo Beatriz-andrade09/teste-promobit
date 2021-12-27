@@ -1,0 +1,22 @@
+.container {
+    margin-bottom: 200px;
+}
+
+.bg-imagem {
+    height: 19vw;
+    background-image: url("https://media-exp1.licdn.com/dms/image/C4D1BAQHgkqsMjCePYg/company-background_10000/0/1638389004444?e=2159024400&v=beta&t=cz89R56O_DucJGE0Ms8CBf0dKXhHX74Jw0oWuVjxTu4");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-imagem p {
+    text-shadow: 4px 4px 8px black;
+    font-size: 4px;
+}
+
+#usuario {
+    border: #007bff 2px solid;
+    border-radius: 50%;
+    height: 10%;
+    width: 15%;
+}
