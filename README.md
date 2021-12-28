@@ -1,21 +1,25 @@
-# Teste Promobit
 
-O projeto em questão, trata-se de um teste com o intuito de criar um CRUD de produtos, tags e extração de relatório de relevância de produtos.
+<img src="https://www.opovo.com.br/_midias/png/2021/05/06/promobit-15686966.png" min-width="600px" max-width="600px" width="600px" align="center" alt="logo Promobit">
 
-# Tecnologias Utilizadas
+# 👩‍💻 Teste prático - Promobit  
 
-1. Wampserver;
-2. PHP 7;
-3. MySQL 5.7;
-4. Bootstrap;
+O projeto em questão, trata-se de um teste com o intuito de criar um CRUD de produtos, tags e extração de relatório de relevância de produtos
 
-# Orientações
+# 🚀 Tecnologias Utilizadas
+
+1. Wampserver 3.2; 
+2. PHP 7; 
+3. MySQL 5.7; 
+4. Bootstrap 4; 
+
+#  🚀 Orientações 
 
 1. Clone este repositório;
 2. Acesse o localhost > phpmyadmin;
 3. Crie um Banco de Dados chamado teste-promobit;
 
 Insira o seguinte código ->
+
 create database teste-promobit;
 
 use teste-promobit;
@@ -51,7 +55,7 @@ CREATE TABLE `user` (
 );
 
 
-# SQL de extração de Relatório de Relevancia de produtos
+#  🚀 SQL de extração de Relatório de Relevancia de produtos   
 SELECT ta.name, ta.id, COUNT(tp.product_id) as qtd_produto
 from tag ta 
 LEFT JOIN product_tag tp on ta.id = tp.tag_id WHERE ta.name LIKE ? GROUP by 1;
